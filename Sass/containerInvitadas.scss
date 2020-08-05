@@ -1,0 +1,39 @@
+@import "./variables.scss";
+.containerInvitadas {
+    padding-top: 10%;
+    height: auto;
+    display: inline-block;
+}
+
+.tituloInvitadas {
+    font-family: $IBMPlexSans;
+    font-size: 48px;
+    color: $colorDeFuente;
+    letter-spacing: 0;
+    line-height: 62px;
+    margin-top: 56px;
+    margin-left: 200px;
+    margin-bottom: 36px;
+    @media screen and (max-width: $anchoMobile) {
+        font-size: 36px;
+        line-height: 42px;
+        margin-left: 16px;
+        margin-bottom: 14px;
+    }
+}
+
+.fotoInvitada {
+    @media screen and (max-width: $anchoMobile) {
+        width: 100%;
+    }
+}
+
+.filaFotos {
+    width: $anchoDesktop;
+    display: flex;
+    flex-direction: row;
+    @media screen and (max-width: $anchoMobile) {
+        flex-direction: column;
+        width: 320px;
+    }
+}

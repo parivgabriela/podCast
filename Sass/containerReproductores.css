@@ -1,0 +1,117 @@
+.containerFondoAzulInclinado {
+  width: 100%;
+  height: 1042px;
+  position: relative;
+  padding-bottom: 200px;
+  padding-top: 169px;
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  /* tranform no es responsive clip path es mas responsive*/
+  -webkit-clip-path: polygon(0 12%, 100% 0%, 100% 90%, 0% 100%);
+          clip-path: polygon(0 12%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+@media screen and (max-width: 322px) {
+  .containerFondoAzulInclinado {
+    padding-top: 64px;
+    -webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+            clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+    height: 1203px;
+  }
+}
+
+.episodios {
+  font-family: "IBM Plex Sans";
+  font-size: 36px;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  line-height: 42px;
+  padding-bottom: 27px;
+  padding-left: 200px;
+}
+
+@media screen and (max-width: 322px) {
+  .episodios {
+    padding-left: 16px;
+  }
+}
+
+.reproductor {
+  width: 584px;
+  height: 323px;
+}
+
+@media screen and (max-width: 332px) {
+  .reproductor {
+    width: 298px;
+    height: 225px;
+    margin: 11px 11px 0px 11px;
+  }
+}
+
+.fila {
+  width: 1240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 100px;
+  margin-right: 100px;
+  position: relative;
+}
+
+@media screen and (max-width: 332px) {
+  .fila {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 320px;
+    margin-left: 0px;
+    margin-right: 11px;
+  }
+}
+
+.resp-iframe {
+  border: 0;
+  width: 584px;
+  height: 323px;
+}
+
+@media screen and (max-width: 322px) {
+  .resp-iframe {
+    width: 298px;
+    height: 225px;
+  }
+}
+
+.espaciado {
+  margin-left: 72px;
+}
+
+@media screen and (max-width: 322px) {
+  .espaciado {
+    margin-left: 11px;
+  }
+}
+
+.resp-container {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 322px) {
+  .resp-container {
+    width: 298px;
+    height: 225px;
+    margin: 11px 11px 11px 11px;
+  }
+}
+/*# sourceMappingURL=containerReproductores.css.map */

@@ -1,0 +1,80 @@
+@import "./variables.scss";
+.containerAlgunosTemas {
+    width: 100%;
+    height: 426px;
+    display: inline-block;
+    margin-bottom: 34px;
+    @media screen and (max-width: $anchoMobile) {
+        margin-bottom: 46px;
+        height: 1018px;
+        width: 320px;
+    }
+}
+
+.algunosTemas {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 56px;
+    @media screen and (max-width: $anchoMobile) {
+        flex-direction: column;
+        align-items: center;
+        align-content: space-around;
+        margin-top: 0px;
+    }
+}
+
+.textoalgunostemas {
+    font-family: $IBMPlexSans;
+    font-size: 24px;
+    color: $colorDeFuente;
+    letter-spacing: 0;
+    line-height: 32px;
+    font-weight: 600;
+    width: 288px;
+    text-align: center;
+    @media screen and (max-width: $anchoMobile) {
+        width: 220px;
+    }
+}
+
+.tituloAlgunostemas {
+    font-family: $IBMPlexSans;
+    font-size: 48px;
+    color: $colorDeFuente;
+    letter-spacing: 0;
+    line-height: 62px;
+    margin-top: 69px;
+    margin-left: 200px;
+    font-weight: normal;
+    @media screen and (max-width: $anchoMobile) {
+        font-size: 36px;
+        line-height: 42px;
+        margin-top: 48px;
+        margin-left: 16px;
+    }
+}
+
+.card-confoto {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @media screen and (max-width: $anchoMobile) {
+        width: 320px;
+        margin-top: 36px;
+    }
+}
+
+.fotoCard {
+    width: 104px;
+    height: 104px;
+    margin: 13px 78px;
+    @media screen and (max-width: $anchoMobile) {
+        margin: 13px 108px;
+    }
+}
